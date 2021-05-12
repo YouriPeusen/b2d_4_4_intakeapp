@@ -7,9 +7,20 @@
     <title></title>
 </head>
 <body>
-    <form id="form1" runat="server">
+    <form id="inputNewItem" runat="server">
         <div>
-            <h1>Test</h1>
+            Category <asp:DropDownList ID="categoryChooser" runat="server"></asp:DropDownList><br />
+            Productname<input id="productName" type="text" /><br />
+            Description <input id="productDescription" type="text" /><br />
+            Status <!-- misschien automatiseren --><asp:DropDownList ID="statusChooser" runat="server"></asp:DropDownList><br />
+            Image <input id="articleImage" type="file" /><br />
+            
+            <!-- providerId = ingelogde user of input
+                loandate & experationdate op null oid
+                
+              -->
+
+            <input id="inputButton" type="button" value="Submit" />
         </div>
     </form>
 </body>
