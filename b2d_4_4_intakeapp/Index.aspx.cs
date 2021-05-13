@@ -16,5 +16,10 @@ namespace b2d_4_4_intakeapp
         {
             
         }
+
+        protected void inputButton_Clicked(object sender, EventArgs e)
+        {
+            // maak object van class op basis van invoerveld, doe vervolgens code uit dal daarmee
+        }
     }
 }

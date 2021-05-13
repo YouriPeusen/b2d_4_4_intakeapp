@@ -24,6 +24,21 @@ namespace b2d_4_4_intakeapp.Classes
             return con;
         }
 
-       
+       public void AddNewArticle() // object van class Article als parameter
+        {
+            SqlConnection con = databaseConnect();
+
+            SqlCommand cmd = new SqlCommand("insert into Articles (ProductId, StatusId, ProviderId, Image, Commentary) values (@productid," +
+                "@statusid,@providerid,@image,@commentary)", con);
+
+            //cmd.Parameters.AddWithValue("@productid", );
+            //cmd.Parameters.AddWithValue("@statusid", );
+            //cmd.Parameters.AddWithValue("@providerid", );
+            //cmd.Parameters.AddWithValue("@image", );
+            //cmd.Parameters.AddWithValue("@commentary", );
+
+            cmd.ExecuteNonQuery();
+            con.Close();
+        }
     }
 }

@@ -25,8 +25,8 @@
                 loandate & experationdate op null oid
                 
               -->
-
-            <input id="inputButton" type="button" value="Submit" />
+            Commentary <input id="commentary" type="text" /><br />
+            <input id="inputButton" type="button" value="Submit" onclick="inputButton_Clicked" />
         </div>
     </form>
 </body>
