@@ -42,5 +42,30 @@ namespace b2d_4_4_intakeapp.Classes
         {
             return articleId;
         }
+
+        public int getProductId()
+        {
+            return productId;
+        }
+
+        public int getStatusId()
+        {
+            return statusId;
+        }
+
+        public int getProviderId()
+        {
+            return providerId;
+        }
+
+        public string getImage()
+        {
+            return image;
+        }
+
+        public string getCommentary()
+        {
+            return commentary;
+        }
     }
 }

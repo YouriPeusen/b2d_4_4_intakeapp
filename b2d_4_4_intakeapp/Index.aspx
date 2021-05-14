@@ -14,7 +14,9 @@
             <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:RuilwinkelDBConnectionString %>" SelectCommand="SELECT * FROM [Categories]"></asp:SqlDataSource>
             <asp:SqlDataSource ID="SqlDataSource1" runat="server"></asp:SqlDataSource>
             <br />
-            Productname<input id="productName" type="text" /><br />
+            Product <asp:DropDownList ID="productChooser" runat="server" DataSourceID="SqlDataSource4" DataTextField="ProductName" DataValueField="ProductID"></asp:DropDownList>
+            <asp:SqlDataSource ID="SqlDataSource4" runat="server" ConnectionString="<%$ ConnectionStrings:RuilwinkelDBConnectionString %>" SelectCommand="SELECT * FROM [Products]"></asp:SqlDataSource>
+            <br /> <!-- ergens een optie geven om een compleet nieuw product toe te voegen -->
             Description <input id="productDescription" type="text" /><br />
             Status <!-- misschien automatiseren --><asp:DropDownList ID="statusChooser" runat="server" DataSourceID="SqlDataSource3" DataTextField="StatusName" DataValueField="StatusID"></asp:DropDownList>
             <asp:SqlDataSource ID="SqlDataSource3" runat="server" ConnectionString="<%$ ConnectionStrings:RuilwinkelDBConnectionString %>" SelectCommand="SELECT * FROM [Statusses]"></asp:SqlDataSource>
@@ -26,7 +28,7 @@
                 
               -->
             Commentary <input id="commentary" type="text" /><br />
-            <input id="inputButton" type="button" value="Submit" onclick="inputButton_Clicked" />
+            <asp:Button ID="Button1" runat="server" Text="Submit" OnClick="inputButton_Clicked" />
         </div>
     </form>
 </body>

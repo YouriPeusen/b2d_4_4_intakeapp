@@ -20,6 +20,10 @@ namespace b2d_4_4_intakeapp
         protected void inputButton_Clicked(object sender, EventArgs e)
         {
             // maak object van class op basis van invoerveld, doe vervolgens code uit dal daarmee
+
+            Article newArtcile = new Article(0, Convert.ToInt32(productChooser.SelectedValue), Convert.ToInt32(statusChooser.SelectedValue), 1, 0, Convert.ToDateTime("14-05-2021"), Convert.ToDateTime("14-05-2021"), "Niks", "Niks"); // Laatste paar zijn placeholders ivm tijd
+            dal.AddNewArticle(newArtcile);
+
         }
     }
 }
