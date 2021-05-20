@@ -25,5 +25,14 @@ namespace b2d_4_4_intakeapp
             dal.AddNewArticle(newArtcile);
 
         }
+
+        protected void addProductBtn_Clicked(object sender, EventArgs e)
+        {
+            // maak object van class op basis van invoerveld, doe vervolgens code uit dal daarmee
+
+            Product newProduct = new Product(0, Convert.ToInt32(categoryChooser.SelectedValue), productName.Value, theProductDescription.Value);
+            dal.AddNewProduct(newProduct);
+
+        }
     }
 }

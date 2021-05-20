@@ -40,5 +40,21 @@ namespace b2d_4_4_intakeapp.Classes
             cmd.ExecuteNonQuery();
             con.Close();
         }
+
+        // Het toevoegen van een nieuw product
+        public void AddNewProduct(Product newProduct)
+        {
+            SqlConnection con = databaseConnect();
+
+            SqlCommand cmd = new SqlCommand("insert into Products (CategoryId, ProductName, ProductDescription) values (@categoryId," +
+                "@productName,@productDescription)", con);
+
+            cmd.Parameters.AddWithValue("@categoryId", newProduct.getCategory());
+            cmd.Parameters.AddWithValue("@productName", newProduct.getName());
+            cmd.Parameters.AddWithValue("@productDescription", newProduct.getDescription());
+
+            cmd.ExecuteNonQuery();
+            con.Close();
+        }
     }
 }
