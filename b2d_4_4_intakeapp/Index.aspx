@@ -21,13 +21,13 @@
             Status <!-- misschien automatiseren --><asp:DropDownList ID="statusChooser" runat="server" DataSourceID="SqlDataSource3" DataTextField="StatusName" DataValueField="StatusID"></asp:DropDownList>
             <asp:SqlDataSource ID="SqlDataSource3" runat="server" ConnectionString="<%$ ConnectionStrings:RuilwinkelDBConnectionString %>" SelectCommand="SELECT * FROM [Statusses]"></asp:SqlDataSource>
             <br />
-            Image <input id="articleImage" type="file" /><br />
+            Image <input id="articleImage" runat="server" type="file" /><br />
             
             <!-- providerId = ingelogde user of input
                 loandate & experationdate op null oid
                 
               -->
-            Commentary <input id="commentary" type="text" /><br />
+            Commentary <input id="commentary" runat="server" type="text" /><br />
             <asp:Button ID="Button1" runat="server" Text="Submit" OnClick="inputButton_Clicked" />
         </div>
 

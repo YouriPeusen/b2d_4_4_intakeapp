@@ -69,6 +69,24 @@ namespace b2d_4_4_intakeapp
         protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource3;
 
         /// <summary>
+        /// articleImage control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlInputFile articleImage;
+
+        /// <summary>
+        /// commentary control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlInputText commentary;
+
+        /// <summary>
         /// Button1 control.
         /// </summary>
         /// <remarks>
