@@ -15,7 +15,7 @@ namespace b2d_4_4_intakeapp.Classes
         // Het connecten met de database via de connectiestring. Even aanpassen naar je eigen connectiestring dus ;).
         public SqlConnection databaseConnect()
         {
-            string connectionString = @"Data Source=tcp:b2d-4-4-intakeappdbserver.database.windows.net,1433;Initial Catalog=b2d_4_4_intakeapp_db;User Id=SqldbUser@b2d-4-4-intakeappdbserver;Password=4Gq7OTUgd44f;"; // <----- Deze aanpassen naar eigen connectionstring
+            string connectionString = @"Data Source=tcp:b2d-4-4-intakeappdbserver.database.windows.net,1433;Initial Catalog=b2d_4_4_intakeapp_db;User Id=AdminYP@b2d-4-4-intakeappdbserver;Password=4Gq7OTUgd44f;"; // <----- Deze aanpassen naar eigen connectionstring
 
             con = new SqlConnection(connectionString);
 
