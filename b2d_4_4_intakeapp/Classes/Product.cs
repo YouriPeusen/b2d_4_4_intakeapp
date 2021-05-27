@@ -20,5 +20,20 @@ namespace b2d_4_4_intakeapp.Classes
             this.productName = _productName;
             this.productDescription = _productDescription;
         }
+
+        public int getCategory()
+        {
+            return this.categoryId;
+        }
+
+        public string getName()
+        {
+            return this.productName;
+        }
+
+        public string getDescription()
+        {
+            return this.productDescription;
+        }
     }
 }
