@@ -25,5 +25,10 @@ namespace b2d_4_4_intakeapp
             dal.AddNewArticle(newArtcile);
 
         }
+
+        protected void SqlDataSource2_Selecting(object sender, SqlDataSourceSelectingEventArgs e)
+        {
+
+        }
     }
 }

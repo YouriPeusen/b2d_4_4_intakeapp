@@ -28,31 +28,35 @@
                 <tr>
                     <td class="auto-style1">Category</td>
                     <td>&nbsp;<asp:DropDownList ID="categoryChooser" runat="server" DataSourceID="SqlDataSource2" DataTextField="CategoryName" DataValueField="CategoryID"></asp:DropDownList>
-            <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:RuilwinkelDBConnectionString %>" SelectCommand="SELECT * FROM [Categories]"></asp:SqlDataSource>
-            <asp:SqlDataSource ID="SqlDataSource1" runat="server"></asp:SqlDataSource>
                     </td>
-                    <td>&nbsp;</td>
+                    <td>
+            <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="Data Source=FR4NK3NST31N;Initial Catalog=RuilwinkelDB;Integrated Security=True" SelectCommand="SELECT * FROM [Categories]" OnSelecting="SqlDataSource2_Selecting"></asp:SqlDataSource>
+                    </td>
                 </tr>
                 <tr>
                     <td class="auto-style1">Product</td>
                     <td> <asp:DropDownList ID="productChooser" runat="server" DataSourceID="SqlDataSource4" DataTextField="ProductName" DataValueField="ProductID"></asp:DropDownList>
-            <asp:SqlDataSource ID="SqlDataSource4" runat="server" ConnectionString="<%$ ConnectionStrings:RuilwinkelDBConnectionString %>" SelectCommand="SELECT * FROM [Products]"></asp:SqlDataSource>
                     </td>
-                    <td>&nbsp;</td>
+                    <td>
+            <asp:SqlDataSource ID="SqlDataSource1" runat="server"></asp:SqlDataSource>
+                    </td>
                 </tr>
                 <tr>
                     <td class="auto-style1">Description</td>
                     <td> <input id="productDescription" type="text" /></td>
-                    <td>&nbsp;</td>
+                    <td>
+            <asp:SqlDataSource ID="SqlDataSource4" runat="server" ConnectionString="Data Source=FR4NK3NST31N;Initial Catalog=RuilwinkelDB;Integrated Security=True" SelectCommand="SELECT * FROM [Products]"></asp:SqlDataSource>
+                    </td>
                 </tr>
             </table>
             <table class="auto-style4" style="width:100%;">
                 <tr>
                     <td class="auto-style2">Status <!-- misschien automatiseren --></td>
                     <td><asp:DropDownList ID="statusChooser" runat="server" DataSourceID="SqlDataSource3" DataTextField="StatusName" DataValueField="StatusID"></asp:DropDownList>
-            <asp:SqlDataSource ID="SqlDataSource3" runat="server" ConnectionString="<%$ ConnectionStrings:RuilwinkelDBConnectionString %>" SelectCommand="SELECT * FROM [Statusses]"></asp:SqlDataSource>
                     </td>
-                    <td>&nbsp;</td>
+                    <td>
+            <asp:SqlDataSource ID="SqlDataSource3" runat="server" ConnectionString="Data Source=FR4NK3NST31N;Initial Catalog=RuilwinkelDB;Integrated Security=True" SelectCommand="SELECT * FROM [Statusses]"></asp:SqlDataSource>
+                    </td>
                 </tr>
                 <tr>
                     <td class="auto-style2">Image </td>
