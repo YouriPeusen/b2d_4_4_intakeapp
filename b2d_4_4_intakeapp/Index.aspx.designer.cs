@@ -24,7 +24,7 @@ namespace b2d_4_4_intakeapp
         protected global::System.Web.UI.HtmlControls.HtmlForm inputNewItem;
 
         /// <summary>
-        /// Image1 control.
+        /// SqlDataSource1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
@@ -96,22 +96,22 @@ namespace b2d_4_4_intakeapp
         protected global::System.Web.UI.HtmlControls.HtmlInputText theProductDescription;
 
         /// <summary>
-        /// btnAddProduct control.
+        /// categoryChooser control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnAddProduct;
+        protected global::System.Web.UI.WebControls.DropDownList categoryChooser;
 
         /// <summary>
-        /// SqlDataSource1 control.
+        /// SqlDataSource2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource1;
+        protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource2;
 
         /// <summary>
         /// SqlDataSource2 control.
