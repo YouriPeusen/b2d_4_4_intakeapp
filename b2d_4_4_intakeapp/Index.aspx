@@ -112,7 +112,10 @@
                 <tr>
                     <td class="auto-style7">&nbsp;</td>
                     <td class="auto-style10">Category </td>
-                    <td class="auto-style15">&nbsp;</td>
+                    <td class="auto-style15">
+                        <asp:DropDownList ID="DropDownList1" runat="server" DataSourceID="SqlDataSource2">
+                        </asp:DropDownList>
+                    </td>
                 </tr>
                 <tr>
                     <td class="auto-style7">&nbsp;</td>
