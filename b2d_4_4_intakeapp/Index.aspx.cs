@@ -34,5 +34,10 @@ namespace b2d_4_4_intakeapp
             dal.AddNewProduct(newProduct);
 
         }
+
+        protected void statusChooser_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
