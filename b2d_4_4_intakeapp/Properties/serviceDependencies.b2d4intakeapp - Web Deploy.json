@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "mssql1": {
+      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroupName')]/providers/Microsoft.Sql/servers/b2d-4-4-intakeappdbserver/databases/b2d_4_4_intakeapp_db",
+      "type": "mssql.azure",
+      "connectionId": "RuilwinkelDBConnectionString",
+      "secretStore": "AzureAppSettings"
+    }
+  }
+}

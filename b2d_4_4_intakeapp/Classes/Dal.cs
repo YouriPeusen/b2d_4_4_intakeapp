@@ -12,10 +12,10 @@ namespace b2d_4_4_intakeapp.Classes
         // Een static variabele van de connectie, zodat hij in de functies niet zeurt dat hij niet bestaat
         static SqlConnection con;
 
-        // Het connecten met de database via de connectiestring. Even aanpassen naar je eigen connectiestring dus ;)
+        // Het connecten met de database via de connectiestring. Even aanpassen naar je eigen connectiestring dus ;).
         public SqlConnection databaseConnect()
         {
-            string connectionString = @"Data Source=JUDITH-PC;Initial Catalog=RuilwinkelDB;Integrated Security=True;"; // <----- Deze aanpassen naar eigen connectionstring
+            string connectionString = @"Data Source=tcp:b2d-4-4-intakeappdbserver.database.windows.net,1433;Initial Catalog=b2d_4_4_intakeapp_db;User Id=AdminYP@b2d-4-4-intakeappdbserver;Password=4Gq7OTUgd44f;"; // <----- Deze aanpassen naar eigen connectionstring
 
             con = new SqlConnection(connectionString);
 
@@ -36,6 +36,22 @@ namespace b2d_4_4_intakeapp.Classes
             cmd.Parameters.AddWithValue("@providerid", newArticle.getProviderId());
             cmd.Parameters.AddWithValue("@image", newArticle.getImage());
             cmd.Parameters.AddWithValue("@commentary", newArticle.getCommentary());
+
+            cmd.ExecuteNonQuery();
+            con.Close();
+        }
+
+        // Het toevoegen van een nieuw product
+        public void AddNewProduct(Product newProduct)
+        {
+            SqlConnection con = databaseConnect();
+
+            SqlCommand cmd = new SqlCommand("insert into Products (CategoryId, ProductName, ProductDescription) values (@categoryId," +
+                "@productName,@productDescription)", con);
+
+            cmd.Parameters.AddWithValue("@categoryId", newProduct.getCategory());
+            cmd.Parameters.AddWithValue("@productName", newProduct.getName());
+            cmd.Parameters.AddWithValue("@productDescription", newProduct.getDescription());
 
             cmd.ExecuteNonQuery();
             con.Close();
