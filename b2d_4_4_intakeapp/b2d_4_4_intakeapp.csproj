@@ -130,6 +130,7 @@
     <Content Include="Content\bootstrap-theme.css.map" />
     <None Include="Properties\PublishProfiles\b2d4intakeapp - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
+    <Content Include="Images\Background intake.png" />
     <Content Include="Images\Ruiolwinkel Vaals Logo.png" />
     <Content Include="Index.aspx" />
     <Content Include="Scripts\bootstrap.js" />

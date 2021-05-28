@@ -54,14 +54,29 @@
             width: 216px;
             font-family: Arial, Helvetica, sans-serif;
         }
+        .auto-style17 {
+            width: 100%;
+        }
+        .auto-style18 {
+            width: 1551px;
+            height: 170px;
+        }
+        .auto-style19 {
+            height: 1080px;
+            margin-left: 0px;
+        }
+        .auto-style20 {
+            margin-left: 1360px;
+        }
     </style>
 </head>
 <body>
     <form id="inputNewItem" runat="server">
-        <div>
-            &nbsp;<asp:Image ID="Image1" runat="server" Height="273px" Width="293px" ImageUrl="~/Images/Ruiolwinkel Vaals Logo.png" />
+        <div class="auto-style19" style="background-image: url('Images/Background intake.png')">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <br />
             <br /> <!-- ergens een optie geven om een compleet nieuw product toe te voegen -->
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <br />
             <br />
             <br />
@@ -70,7 +85,9 @@
                 loandate & experationdate op null oid
                 
               -->
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <asp:Image ID="Image1" runat="server" Height="273px" Width="293px" ImageUrl="~/Images/Ruiolwinkel Vaals Logo.png" ImageAlign="AbsMiddle" />
             <br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <table style="width:100%;" class="auto-style15">
                 <tr>
                     <td class="auto-style3">&nbsp;</td>
@@ -90,7 +107,7 @@
                     <td> <input id="productDescription" type="text" class="auto-style15" /></td>
                 </tr>
             </table>
-            <table style="width:100%;">
+            <table class="auto-style17">
                 <tr>
                     <td class="auto-style2">&nbsp;</td>
                     <td class="auto-style16">Status <!-- misschien automatiseren --></td>
@@ -108,7 +125,7 @@
                     <td class="auto-style12"> <input id="commentary" runat="server" type="text" class="auto-style15" /></td>
                 </tr>
             </table>
-            <table style="width:100%;">
+            <table class="auto-style17">
                 <tr>
                     <td class="auto-style7">&nbsp;</td>
                     <td class="auto-style10">Category </td>
@@ -128,22 +145,23 @@
                     <td class="auto-style1"> <input runat="server" id="theProductDescription" type="text" class="auto-style15" /></td>
                 </tr>
             </table>
-        </div>
-
-        <!-- het toevoegen van een nieuw product, waarmee een nieuw artikel kan worden aangemaakt -->
-        <div id="addNewProduct">
+        <div id="addNewProduct" class="auto-style18" draggable="true">
+            <p class="auto-style20">
             <br />
 
             &nbsp;<asp:Button ID="btnAddProduct" runat="server" Text="Submit" OnClick="addProductBtn_Clicked" CssClass="auto-style15" />
              <br />
-            &nbsp;<br />
-
+            &nbsp;</p>
             <asp:SqlDataSource ID="SqlDataSource1" runat="server"></asp:SqlDataSource>
             <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:RuilwinkelDBConnectionString %>" SelectCommand="SELECT * FROM [Categories]"></asp:SqlDataSource>
             <asp:SqlDataSource ID="SqlDataSource3" runat="server" ConnectionString="<%$ ConnectionStrings:RuilwinkelDBConnectionString %>" SelectCommand="SELECT * FROM [Statusses]"></asp:SqlDataSource>
             <asp:SqlDataSource ID="SqlDataSource4" runat="server" ConnectionString="<%$ ConnectionStrings:RuilwinkelDBConnectionString %>" SelectCommand="SELECT * FROM [Products]"></asp:SqlDataSource>
-        </div>
-    </form>
+            <br />
 
-</body>
+        </div>
+        </div>
+
+        <!-- het toevoegen van een nieuw product, waarmee een nieuw artikel kan worden aangemaakt -->
+    </form>
+    </body>
 </html>
