@@ -12,12 +12,11 @@
         }
         .auto-style2 {
             width: 254px;
+            font-family: Arial, Helvetica, sans-serif;
         }
         .auto-style3 {
             width: 255px;
-        }
-        .auto-style4 {
-            width: 216px;
+            font-family: Arial, Helvetica, sans-serif;
         }
         .auto-style6 {
             height: 3px;
@@ -25,13 +24,16 @@
         }
         .auto-style7 {
             width: 257px;
+            font-family: Arial, Helvetica, sans-serif;
         }
         .auto-style9 {
             height: 3px;
             width: 213px;
+            font-family: Arial, Helvetica, sans-serif;
         }
         .auto-style10 {
             width: 213px;
+            font-family: Arial, Helvetica, sans-serif;
         }
         .auto-style11 {
             width: 254px;
@@ -43,13 +45,21 @@
         .auto-style14 {
             width: 216px;
             height: 26px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .auto-style15 {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .auto-style16 {
+            width: 216px;
+            font-family: Arial, Helvetica, sans-serif;
         }
     </style>
 </head>
 <body>
     <form id="inputNewItem" runat="server">
         <div>
-            &nbsp;<asp:Image ID="Image1" runat="server" Height="206px" Width="242px" />
+            &nbsp;<asp:Image ID="Image1" runat="server" Height="273px" Width="293px" ImageUrl="~/Images/Ruiolwinkel Vaals Logo.png" />
             <br />
             <br /> <!-- ergens een optie geven om een compleet nieuw product toe te voegen -->
             <br />
@@ -61,58 +71,58 @@
                 
               -->
             <br />
-            <table style="width:100%;">
+            <table style="width:100%;" class="auto-style15">
                 <tr>
                     <td class="auto-style3">&nbsp;</td>
-                    <td class="auto-style4">Category</td>
-                    <td> <asp:DropDownList ID="categoryChooser" runat="server" DataSourceID="SqlDataSource2" DataTextField="CategoryName" DataValueField="CategoryID"></asp:DropDownList>
+                    <td class="auto-style16">Category</td>
+                    <td> <asp:DropDownList ID="categoryChooser" runat="server" DataSourceID="SqlDataSource2" DataTextField="CategoryName" DataValueField="CategoryID" CssClass="auto-style15"></asp:DropDownList>
                     </td>
                 </tr>
                 <tr>
                     <td class="auto-style3">&nbsp;</td>
-                    <td class="auto-style4">Product </td>
-                    <td> <asp:DropDownList ID="productChooser" runat="server" DataSourceID="SqlDataSource4" DataTextField="ProductName" DataValueField="ProductID"></asp:DropDownList>
+                    <td class="auto-style16">Product </td>
+                    <td> <asp:DropDownList ID="productChooser" runat="server" DataSourceID="SqlDataSource4" DataTextField="ProductName" DataValueField="ProductID" CssClass="auto-style15"></asp:DropDownList>
                     </td>
                 </tr>
                 <tr>
                     <td class="auto-style3">&nbsp;</td>
-                    <td class="auto-style4">Description </td>
-                    <td> <input id="productDescription" type="text" /></td>
+                    <td class="auto-style16">Description </td>
+                    <td> <input id="productDescription" type="text" class="auto-style15" /></td>
                 </tr>
             </table>
             <table style="width:100%;">
                 <tr>
                     <td class="auto-style2">&nbsp;</td>
-                    <td class="auto-style4">Status <!-- misschien automatiseren --></td>
-                    <td><asp:DropDownList ID="statusChooser" runat="server" DataSourceID="SqlDataSource3" DataTextField="StatusName" DataValueField="StatusID"></asp:DropDownList>
+                    <td class="auto-style16">Status <!-- misschien automatiseren --></td>
+                    <td><asp:DropDownList ID="statusChooser" runat="server" DataSourceID="SqlDataSource3" DataTextField="StatusName" DataValueField="StatusID" CssClass="auto-style15"></asp:DropDownList>
                     </td>
                 </tr>
                 <tr>
                     <td class="auto-style2">&nbsp;</td>
-                    <td class="auto-style4">Image </td>
-                    <td> <input id="articleImage" runat="server" type="file" /></td>
+                    <td class="auto-style16">Image </td>
+                    <td> <input id="articleImage" runat="server" type="file" class="auto-style15" /></td>
                 </tr>
                 <tr>
                     <td class="auto-style11"></td>
                     <td class="auto-style14">Commentary </td>
-                    <td class="auto-style12"> <input id="commentary" runat="server" type="text" /></td>
+                    <td class="auto-style12"> <input id="commentary" runat="server" type="text" class="auto-style15" /></td>
                 </tr>
             </table>
             <table style="width:100%;">
                 <tr>
                     <td class="auto-style7">&nbsp;</td>
                     <td class="auto-style10">Category </td>
-                    <td>&nbsp;</td>
+                    <td class="auto-style15">&nbsp;</td>
                 </tr>
                 <tr>
                     <td class="auto-style7">&nbsp;</td>
                     <td class="auto-style10">Product name</td>
-                    <td> <input runat="server" id="productName" type="text" /></td>
+                    <td> <input runat="server" id="productName" type="text" class="auto-style15" /></td>
                 </tr>
                 <tr>
                     <td class="auto-style6"></td>
                     <td class="auto-style9">Product description</td>
-                    <td class="auto-style1"> <input runat="server" id="theProductDescription" type="text" /></td>
+                    <td class="auto-style1"> <input runat="server" id="theProductDescription" type="text" class="auto-style15" /></td>
                 </tr>
             </table>
         </div>
@@ -121,7 +131,7 @@
         <div id="addNewProduct">
             <br />
 
-            &nbsp;<asp:Button ID="btnAddProduct" runat="server" Text="Submit" OnClick="addProductBtn_Clicked" />
+            &nbsp;<asp:Button ID="btnAddProduct" runat="server" Text="Submit" OnClick="addProductBtn_Clicked" CssClass="auto-style15" />
              <br />
             &nbsp;<br />
 
