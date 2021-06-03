@@ -130,8 +130,9 @@
                     <td class="auto-style7">&nbsp;</td>
                     <td class="auto-style10">Category </td>
                     <td class="auto-style15">
-                        <asp:DropDownList ID="DropDownList1" runat="server" DataSourceID="SqlDataSource2">
+                        <asp:DropDownList ID="DropDownList1" runat="server" DataSourceID="SqlDataSource5" DataTextField="CategoryName" DataValueField="CategoryID">
                         </asp:DropDownList>
+                        <asp:SqlDataSource ID="SqlDataSource5" runat="server" ConnectionString="<%$ ConnectionStrings:RuilwinkelDBConnectionString %>" SelectCommand="SELECT * FROM [Categories]"></asp:SqlDataSource>
                     </td>
                 </tr>
                 <tr>
