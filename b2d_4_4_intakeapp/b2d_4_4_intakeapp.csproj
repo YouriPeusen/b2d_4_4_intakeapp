@@ -171,8 +171,10 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Classes\Article.cs" />
+    <Compile Include="Classes\Category.cs" />
     <Compile Include="Classes\Dal.cs" />
     <Compile Include="Classes\Product.cs" />
+    <Compile Include="Classes\User.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>

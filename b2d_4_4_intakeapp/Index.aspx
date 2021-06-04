@@ -81,14 +81,16 @@
             <br />
             <br />
             
-            <!-- providerId = ingelogde user of input
-                loandate & experationdate op null oid
-                
-              -->
+          
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <asp:Image ID="Image1" runat="server" Height="273px" Width="293px" ImageUrl="~/Images/Ruiolwinkel Vaals Logo.png" ImageAlign="AbsMiddle" />
             <br />
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <table style="width:100%;" class="auto-style15">
+            
+            <!-- het uitkiezen voor welke user het toegevoegd moet worden -->
+            User <asp:DropDownList ID="userChooser" runat="server" DataSourceID="SqlDataSource5" DataTextField="FirstName" DataValueField="UserID">
+            </asp:DropDownList>
+            <asp:SqlDataSource ID="SqlDataSource5" runat="server" ConnectionString="<%$ ConnectionStrings:RuilwinkelDBConnectionString %>" SelectCommand="SELECT * FROM [Users]"></asp:SqlDataSource>
+&nbsp;<table style="width:100%;" class="auto-style15">
                 <tr>
                     <td class="auto-style3">&nbsp;</td>
                     <td class="auto-style16">Category</td>
@@ -130,9 +132,13 @@
                     <td class="auto-style7">&nbsp;</td>
                     <td class="auto-style10">Category </td>
                     <td class="auto-style15">
-                        <asp:DropDownList ID="DropDownList1" runat="server" DataSourceID="SqlDataSource5" DataTextField="CategoryName" DataValueField="CategoryID">
+
+                        <asp:DropDownList ID="DropDownList1" runat="server" DataSourceID="SqlDataSource6" DataTextField="CategoryName" DataValueField="CategoryID">
                         </asp:DropDownList>
-                        <asp:SqlDataSource ID="SqlDataSource5" runat="server" ConnectionString="<%$ ConnectionStrings:RuilwinkelDBConnectionString %>" SelectCommand="SELECT * FROM [Categories]"></asp:SqlDataSource>
+                        <asp:SqlDataSource ID="SqlDataSource6" runat="server" ConnectionString="<%$ ConnectionStrings:RuilwinkelDBConnectionString %>" SelectCommand="SELECT * FROM [Categories]"></asp:SqlDataSource>
+                       
+                        <asp:DropDownList ID="DropDownList1" runat="server" DataSourceID="SqlDataSource5" DataTextField="CategoryName" DataValueField="CategoryID">
+                        
                     </td>
                 </tr>
                 <tr>
@@ -149,7 +155,7 @@
         <div id="addNewProduct" class="auto-style18" draggable="true">
             <p class="auto-style20">
             <br />
-
+                <asp:Button ID="btnAddArticle" runat="server" Text="Voeg artikel toe" OnClick="inputButton_Clicked" CssClass="auto-style15" />
             &nbsp;<asp:Button ID="btnAddProduct" runat="server" Text="Submit" OnClick="addProductBtn_Clicked" CssClass="auto-style15" />
              <br />
             &nbsp;</p>
