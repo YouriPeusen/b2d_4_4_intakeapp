@@ -23,8 +23,5 @@ jobs:
       run: dotnet build --no-restore
     - name: Test
       run: dotnet test --no-build --verbosity normal
-    - name: OWASP ZAP Baseline Scan
-      uses: zaproxy/action-baseline@v0.4.0
-      with:
-          target: https://b2d4intakeapp.azurewebsites.net
+
            
