@@ -69,15 +69,6 @@ namespace b2d_4_4_intakeapp
         protected global::System.Web.UI.WebControls.DropDownList statusChooser;
 
         /// <summary>
-        /// commentary control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText commentary;
-
-        /// <summary>
         /// productName control.
         /// </summary>
         /// <remarks>
@@ -85,15 +76,6 @@ namespace b2d_4_4_intakeapp
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlInputText productName;
-
-        /// <summary>
-        /// theProductDescription control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText theProductDescription;
 
         /// <summary>
         /// btnAddProduct control.

@@ -7,32 +7,13 @@
 <head runat="server">
     <title></title>
     <style type="text/css">
-        .auto-style1 {
-            height: 3px;
-        }
         .auto-style2 {
             width: 254px;
             font-family: Arial, Helvetica, sans-serif;
+            height: 26px;
         }
         .auto-style3 {
             width: 255px;
-            font-family: Arial, Helvetica, sans-serif;
-        }
-        .auto-style6 {
-            height: 3px;
-            width: 257px;
-        }
-        .auto-style7 {
-            width: 257px;
-            font-family: Arial, Helvetica, sans-serif;
-        }
-        .auto-style9 {
-            height: 3px;
-            width: 213px;
-            font-family: Arial, Helvetica, sans-serif;
-        }
-        .auto-style10 {
-            width: 213px;
             font-family: Arial, Helvetica, sans-serif;
         }
         .auto-style11 {
@@ -68,19 +49,6 @@
         }
         .auto-style20 {
             margin-left: 1360px;
-        }
-        .auto-style21 {
-            width: 254px;
-            font-family: Arial, Helvetica, sans-serif;
-            height: 21px;
-        }
-        .auto-style22 {
-            width: 216px;
-            font-family: Arial, Helvetica, sans-serif;
-            height: 21px;
-        }
-        .auto-style23 {
-            height: 21px;
         }
         .auto-style26 {
             width: 221px;
@@ -122,6 +90,29 @@
         .auto-style36 {
             height: 22px;
         }
+        .auto-style37 {
+            font-family: Arial, Helvetica, sans-serif;
+            width: 169px;
+            height: 18px;
+            table-layout: auto;
+        }
+        .auto-style38 {
+            width: 255px;
+            font-family: Arial, Helvetica, sans-serif;
+            height: 25px;
+        }
+        .auto-style39 {
+            width: 254px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .auto-style40 {
+            width: 216px;
+            height: 25px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .auto-style41 {
+            height: 25px;
+        }
     </style>
 </head>
 <body>
@@ -155,51 +146,34 @@
                     </td>
                 </tr>
                 <tr>
-                    <td class="auto-style3">&nbsp;</td>
-                    <td class="auto-style16">Product </td>
-                    <td> <asp:DropDownList ID="productChooser" runat="server" DataSourceID="SqlDataSource4" DataTextField="ProductName" DataValueField="ProductID" CssClass="auto-style15"></asp:DropDownList>
+                    <td class="auto-style38"></td>
+                    <td class="auto-style40">Product </td>
+                    <td class="auto-style41"> <asp:DropDownList ID="productChooser" runat="server" DataSourceID="SqlDataSource4" DataTextField="ProductName" DataValueField="ProductID" CssClass="auto-style15"></asp:DropDownList>
                     </td>
                 </tr>
                 <tr>
                     <td class="auto-style3">&nbsp;</td>
-                    <td class="auto-style16">Description </td>
-                    <td> <input id="productDescription" type="text" class="auto-style15" /></td>
-                </tr>
-            </table>
-            <table class="auto-style17">
-                <tr>
-                    <td class="auto-style2">&nbsp;</td>
-                    <td class="auto-style16">Status <!-- misschien automatiseren --></td>
-                    <td><asp:DropDownList ID="statusChooser" runat="server" DataSourceID="SqlDataSource3" DataTextField="StatusName" DataValueField="StatusID" CssClass="auto-style15"></asp:DropDownList>
+                    <td class="auto-style16">Status <!-- misschien automatiseren --> </td>
+                    <td> <asp:DropDownList ID="statusChooser" runat="server" DataSourceID="SqlDataSource3" DataTextField="StatusName" DataValueField="StatusID" CssClass="auto-style15"></asp:DropDownList>
                     </td>
                 </tr>
-                <tr>
-                    <td class="auto-style21"></td>
-                    <td class="auto-style22">&nbsp;</td>
-                    <td class="auto-style23"> </td>
-                </tr>
-                <tr>
-                    <td class="auto-style11"></td>
-                    <td class="auto-style14">Commentary </td>
-                    <td class="auto-style12"> <input id="commentary" runat="server" type="text" class="auto-style15" /></td>
-                </tr>
             </table>
             <table class="auto-style17">
                 <tr>
-                    <td class="auto-style7">&nbsp;</td>
-                    <td class="auto-style10">Product name</td>
-                    <td class="auto-style15">
+                    <td class="auto-style2"></td>
+                    <td class="auto-style14">Product name</td>
+                    <td class="auto-style12">
                         <input runat="server" id="productName" type="text" class="auto-style15" /></td>
                 </tr>
                 <tr>
-                    <td class="auto-style7">&nbsp;</td>
-                    <td class="auto-style10">Product description</td>
-                    <td> <input runat="server" id="theProductDescription" type="text" class="auto-style15" /></td>
+                    <td class="auto-style39"></td>
+                    <td class="auto-style16" aria-relevant="all" aria-sort="none" draggable="false" style="vertical-align: top">Product description</td>
+                    <td> <input id="productDescription" type="text" class="auto-style37" style="vertical-align: text-top;" /></td>
                 </tr>
                 <tr>
-                    <td class="auto-style6"></td>
-                    <td class="auto-style9">&nbsp;</td>
-                    <td class="auto-style1"> &nbsp;</td>
+                    <td class="auto-style11"></td>
+                    <td class="auto-style14">&nbsp;</td>
+                    <td class="auto-style12"> &nbsp;</td>
                 </tr>
             </table>
         <div id="addNewProduct" class="auto-style18" draggable="true">
