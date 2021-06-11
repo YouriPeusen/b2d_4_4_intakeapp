@@ -1,7 +1,6 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace TestUnitTestEmpty
+namespace UnitTestProject2
 {
     [TestClass]
     public class UnitTest1
@@ -9,7 +8,6 @@ namespace TestUnitTestEmpty
         [TestMethod]
         public void TestMethod1()
         {
-
         }
     }
 }
