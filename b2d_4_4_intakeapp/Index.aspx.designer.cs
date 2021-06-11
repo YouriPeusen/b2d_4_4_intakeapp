@@ -15,6 +15,15 @@ namespace b2d_4_4_intakeapp
     {
 
         /// <summary>
+        /// form1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
+
+        /// <summary>
         /// Image1 control.
         /// </summary>
         /// <remarks>
@@ -33,13 +42,13 @@ namespace b2d_4_4_intakeapp
         protected global::System.Web.UI.HtmlControls.HtmlInputFile articleImage0;
 
         /// <summary>
-        /// Image2 control.
+        /// ImgPrv control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image Image2;
+        protected global::System.Web.UI.WebControls.Image ImgPrv;
 
         /// <summary>
         /// userChooser control.
@@ -85,24 +94,6 @@ namespace b2d_4_4_intakeapp
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlInputText commentary;
-
-        /// <summary>
-        /// productName control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText productName;
-
-        /// <summary>
-        /// theProductDescription control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText theProductDescription;
 
         /// <summary>
         /// btnAddArticle control.
