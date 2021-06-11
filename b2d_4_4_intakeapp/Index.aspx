@@ -20,6 +20,7 @@
             }
     </script>
 </head>
+<body>
     <title>Intake producten</title>
     <style type="text/css">
         .auto-style2 {
@@ -112,7 +113,7 @@
             <table class="auto-style21">
                 <tr>
                     <td class="auto-style27">Add Image</td>
-                    <td class="auto-style26"> <input id="articleImage" runat="server" type="file" class="auto-style15" onchange="ShowImagePreview(this);" /></td>
+                    <td class="auto-style26"> <input id="articleImage0" runat="server" type="file" class="auto-style15" onchange="ShowImagePreview(this);" /></td>
                     <td>
                     <asp:Image ID="ImgPrv" Height="290px" Width="318px" runat="server" />
                                    </tr>
@@ -149,9 +150,9 @@
                     </td>
                 </tr>
                 <tr>
-                    <td class="auto-style22"></td>
-                    <td class="auto-style14">Product </td>
-                    <td class="auto-style12"> <asp:DropDownList ID="productChooser" runat="server" DataSourceID="SqlDataSource4" DataTextField="ProductName" DataValueField="ProductID" CssClass="auto-style15"></asp:DropDownList>
+                    <td class="auto-style3">&nbsp;</td>
+                    <td class="auto-style16">Product </td>
+                    <td> <asp:DropDownList ID="productChooser" runat="server" DataSourceID="SqlDataSource4" DataTextField="ProductName" DataValueField="ProductID" CssClass="auto-style15"></asp:DropDownList>
                     </td>
                 </tr>
                 <tr>
@@ -174,31 +175,13 @@
                 </tr>
                 <tr>
                     <td class="auto-style11"></td>
-                    <td class="auto-style14">Product description<td class="auto-style12"> <input r&nbsp;               </tr id="theProductDescription">
+                   <%-- <td class="auto-style14">Product description<td class="auto-style12"> <input r&nbsp;             --%>  </tr>
             </table>
-            <table class="auto-style17">
-                <tr>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                </tr>
-            </table>
-            <br />
         <div id="addNewProduct" class="auto-style18" draggable="true">
             <p class="auto-style20">
             <br />
                 <asp:Button ID="btnAddArticle" runat="server" Text="Voeg artikel toe" OnClick="inputButton_Clicked" CssClass="auto-style15" />
-            &nbsp;<asp:Button ID="btnAddProduct" runat="server" Text="Submit" OnClick="addProductBtn_Clicked" CssClass="auto-style15" />
+       <%--     &nbsp;<asp:Button ID="btnAddProduct" runat="server" Text="Submit" OnClick="addProductBtn_Clicked" CssClass="auto-style15" />--%>
              <br />
             &nbsp;</p>
             <asp:SqlDataSource ID="SqlDataSource1" runat="server"></asp:SqlDataSource>
