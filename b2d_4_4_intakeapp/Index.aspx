@@ -20,7 +20,6 @@
             }
     </script>
 </head>
-<body>
     <title>Intake producten</title>
     <style type="text/css">
         .auto-style2 {
@@ -150,9 +149,9 @@
                     </td>
                 </tr>
                 <tr>
-                    <td class="auto-style3">&nbsp;</td>
-                    <td class="auto-style16">Product </td>
-                    <td> <asp:DropDownList ID="productChooser" runat="server" DataSourceID="SqlDataSource4" DataTextField="ProductName" DataValueField="ProductID" CssClass="auto-style15"></asp:DropDownList>
+                    <td class="auto-style22"></td>
+                    <td class="auto-style14">Product </td>
+                    <td class="auto-style12"> <asp:DropDownList ID="productChooser" runat="server" DataSourceID="SqlDataSource4" DataTextField="ProductName" DataValueField="ProductID" CssClass="auto-style15"></asp:DropDownList>
                     </td>
                 </tr>
                 <tr>
@@ -177,6 +176,24 @@
                     <td class="auto-style11"></td>
                     <td class="auto-style14">Product description<td class="auto-style12"> <input r&nbsp;               </tr id="theProductDescription">
             </table>
+            <table class="auto-style17">
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+            </table>
+            <br />
         <div id="addNewProduct" class="auto-style18" draggable="true">
             <p class="auto-style20">
             <br />
