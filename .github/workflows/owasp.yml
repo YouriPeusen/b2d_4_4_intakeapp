@@ -2,9 +2,9 @@ name: .NET and OWASP
 
 on:
   push:
-    branches: [ ProductionBranch ]
+    branches: [ master ]
   pull_request:
-    branches: [ ProductionBranch ]
+    branches: [ master ]
 
 jobs:
   build:
