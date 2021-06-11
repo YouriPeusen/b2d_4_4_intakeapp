@@ -13,7 +13,7 @@ namespace b2d_4_4_intakeapp.Classes
         private string productDescription;
         
 
-        public Product(int _productId, int _categoryId, int v, string _productName, string _productDescription)
+        public Product(int _productId, int _categoryId, string _productName, string _productDescription)
         {
             this.productId = _productId;
             this.categoryId = _categoryId;

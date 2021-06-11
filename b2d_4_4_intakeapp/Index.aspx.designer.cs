@@ -105,13 +105,13 @@ namespace b2d_4_4_intakeapp
         protected global::System.Web.UI.WebControls.Button btnAddArticle0;
 
         /// <summary>
-        /// ProductName control.
+        /// productName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox ProductName;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText productName;
 
         /// <summary>
         /// categoryChooser0 control.
@@ -123,22 +123,22 @@ namespace b2d_4_4_intakeapp
         protected global::System.Web.UI.WebControls.DropDownList categoryChooser0;
 
         /// <summary>
-        /// ProductDescription control.
+        /// productDescriptionNA control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox ProductDescription;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText productDescriptionNA;
 
         /// <summary>
-        /// addProductButton control.
+        /// btnAddProduct control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button addProductButton;
+        protected global::System.Web.UI.WebControls.Button btnAddProduct;
 
         /// <summary>
         /// SqlDataSource1 control.
