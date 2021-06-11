@@ -51,17 +51,35 @@ namespace b2d_4_4_intakeapp
 
         //}
 
-        protected void Button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         protected void DropDownList1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }
 
         protected void Button1_Click1(object sender, EventArgs e)
+        {
+            // maak object van class op basis van invoerveld, doe vervolgens code uit dal daarmee
+            DateTime dateOne = DateTime.ParseExact("06/04/2021 10:00", "MM/dd/yyyy HH:mm", CultureInfo.InvariantCulture);
+            DateTime dateTwo = DateTime.ParseExact("06/04/2021 10:00", "MM/dd/yyyy HH:mm", CultureInfo.InvariantCulture);
+
+            Product newProduct = new Product(Convert.ToInt32(productChooser.SelectedValue),  0, Convert.ToInt32(userChooser.SelectedValue), 0, dateOne, dateTwo, articleImage0.Value, commentary.Value);
+            dal.AddNewProduct(newProduct);
+
+            // Het onderdeel dat bij het aanmaken van een nieuw artikel de punten bijschrijft bij de gebruiker. Via de ingevoerde categorie zoekt hij
+            // de bijbehorende punten. Hierna wordt de gebruiker gezocht op basis van de keuze. De punten uit de categorie worden bij deze gebruiker
+            // bijgeschreven. 
+
+            int categoryId = Convert.ToInt32(categoryChooser.SelectedValue);
+            Category fromCategory = dal.GetCategoryDetails(categoryId);
+            int rewardedPoints = fromCategory.GetPoints();
+
+            // Zoekt het userId op en voegt de punten toe bij de functie in de DAL. Het opzoeken van de user doet hij ook automatisch in deze
+            // functie.
+            int userId = Convert.ToInt32(userChooser.SelectedValue);
+            dal.AddPointsToUser(userId, rewardedPoints);
+        }
+
+        protected void statusChooser_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }

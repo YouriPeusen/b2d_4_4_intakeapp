@@ -78,13 +78,13 @@ namespace b2d_4_4_intakeapp
         protected global::System.Web.UI.WebControls.DropDownList productChooser;
 
         /// <summary>
-        /// statusChooser0 control.
+        /// statusChooser control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList statusChooser0;
+        protected global::System.Web.UI.WebControls.DropDownList statusChooser;
 
         /// <summary>
         /// commentary control.
@@ -105,22 +105,31 @@ namespace b2d_4_4_intakeapp
         protected global::System.Web.UI.WebControls.Button btnAddArticle0;
 
         /// <summary>
-        /// productProductName control.
+        /// ProductName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox productProductName;
+        protected global::System.Web.UI.WebControls.TextBox ProductName;
 
         /// <summary>
-        /// Productdicription control.
+        /// categoryChooser0 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Productdicription;
+        protected global::System.Web.UI.WebControls.DropDownList categoryChooser0;
+
+        /// <summary>
+        /// ProductDescription control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox ProductDescription;
 
         /// <summary>
         /// addProductButton control.

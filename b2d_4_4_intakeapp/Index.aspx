@@ -172,7 +172,7 @@
                 <tr>
                     <td class="auto-style2">&nbsp;</td>
                     <td class="auto-style16">Status <!-- misschien automatiseren --></td>
-                    <td><asp:DropDownList ID="statusChooser0" runat="server" DataSourceID="SqlDataSource3" DataTextField="StatusName" DataValueField="StatusID" CssClass="auto-style15" OnSelectedIndexChanged="statusChooser_SelectedIndexChanged"></asp:DropDownList>
+                    <td><asp:DropDownList ID="statusChooser" runat="server" DataSourceID="SqlDataSource3" DataTextField="StatusName" DataValueField="StatusID" CssClass="auto-style15" OnSelectedIndexChanged="statusChooser_SelectedIndexChanged"></asp:DropDownList>
                     </td>
                 </tr>
                 <tr>
@@ -190,20 +190,22 @@
                     <td class="auto-style28">&nbsp;</td>
                     <td class="auto-style30">Product name</td>
                     <td>
-                        <asp:TextBox ID="productProductName" runat="server"></asp:TextBox>
+                        <asp:TextBox ID="ProductName" runat="server"></asp:TextBox>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="auto-style28">&nbsp;</td>
+                    <td class="auto-style30">Category</td>
+                    <td>
+                        <asp:DropDownList ID="categoryChooser0" runat="server" DataSourceID="SqlDataSource2" DataTextField="CategoryName" DataValueField="CategoryID" CssClass="auto-style15"></asp:DropDownList>
                     </td>
                 </tr>
                 <tr>
                     <td class="auto-style28">&nbsp;</td>
                     <td class="auto-style30">Product Description</td>
                     <td>
-                        <asp:TextBox ID="Productdicription" runat="server"></asp:TextBox>
+                        <asp:TextBox ID="ProductDescription" runat="server"></asp:TextBox>
                     </td>
-                </tr>
-                <tr>
-                    <td class="auto-style28">&nbsp;</td>
-                    <td class="auto-style30">&nbsp;</td>
-                    <td>&nbsp;</td>
                 </tr>
             </table>
         <div id="addNewProduct" class="auto-style18" draggable="true">
