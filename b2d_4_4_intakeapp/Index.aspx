@@ -31,10 +31,6 @@
             width: 255px;
             font-family: Arial, Helvetica, sans-serif;
         }
-        .auto-style11 {
-            width: 254px;
-            height: 26px;
-        }
         .auto-style12 {
             height: 26px;
         }
@@ -89,6 +85,17 @@
         }
         .auto-style27 {
             width: 2265px;
+        }
+        .auto-style28 {
+            width: 249px;
+        }
+        .auto-style29 {
+            margin-left: 1360px;
+            width: 191px;
+            height: 51px;
+        }
+        .auto-style30 {
+            width: 223px;
         }
     </style>
 </head>
@@ -165,7 +172,7 @@
                 <tr>
                     <td class="auto-style2">&nbsp;</td>
                     <td class="auto-style16">Status <!-- misschien automatiseren --></td>
-                    <td><asp:DropDownList ID="statusChooser" runat="server" DataSourceID="SqlDataSource3" DataTextField="StatusName" DataValueField="StatusID" CssClass="auto-style15"></asp:DropDownList>
+                    <td><asp:DropDownList ID="statusChooser" runat="server" DataSourceID="SqlDataSource3" DataTextField="StatusName" DataValueField="StatusID" CssClass="auto-style15" OnSelectedIndexChanged="statusChooser_SelectedIndexChanged"></asp:DropDownList>
                     </td>
                 </tr>
                 <tr>
@@ -173,17 +180,41 @@
                     <td class="auto-style14">Commentary </td>
                     <td class="auto-style12"> <input id="commentary" runat="server" type="text" class="auto-style15" /></td>
                 </tr>
+                </table>
+            <p class="auto-style29">
+            <br />
+                <asp:Button ID="btnAddArticle0" runat="server" Text="Voeg artikel toe" OnClick="inputButton_Clicked" CssClass="auto-style15" />
+                <%--     &nbsp;<asp:Button ID="btnAddProduct" runat="server" Text="Submit" OnClick="addProductBtn_Clicked" CssClass="auto-style15" />--%></p>
+            <table class="auto-style15" style="width:100%;">
                 <tr>
-                    <td class="auto-style11"></td>
-                   <%-- <td class="auto-style14">Product description<td class="auto-style12"> <input r&nbsp;             --%>  </tr>
+                    <td class="auto-style28">&nbsp;</td>
+                    <td class="auto-style30">Product name</td>
+                    <td>
+                        <asp:TextBox ID="ProductName" runat="server"></asp:TextBox>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="auto-style28">&nbsp;</td>
+                    <td class="auto-style30">Category</td>
+                    <td>
+                        <asp:DropDownList ID="categoryChooser0" runat="server" DataSourceID="SqlDataSource2" DataTextField="CategoryName" DataValueField="CategoryID" CssClass="auto-style15"></asp:DropDownList>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="auto-style28">&nbsp;</td>
+                    <td class="auto-style30">Product Description</td>
+                    <td>
+                        <asp:TextBox ID="ProductDescription" runat="server"></asp:TextBox>
+                    </td>
+                </tr>
             </table>
         <div id="addNewProduct" class="auto-style18" draggable="true">
             <p class="auto-style20">
             <br />
-                <asp:Button ID="btnAddArticle" runat="server" Text="Voeg artikel toe" OnClick="inputButton_Clicked" CssClass="auto-style15" />
-       <%--     &nbsp;<asp:Button ID="btnAddProduct" runat="server" Text="Submit" OnClick="addProductBtn_Clicked" CssClass="auto-style15" />--%>
+                <%--     &nbsp;<asp:Button ID="btnAddProduct" runat="server" Text="Submit" OnClick="addProductBtn_Clicked" CssClass="auto-style15" />--%>
              <br />
-            &nbsp;</p>
+            &nbsp;<asp:Button ID="addProductButton" runat="server" CssClass="auto-style15" OnClick="Button1_Click1" Text="Add Product" />
+            </p>
             <asp:SqlDataSource ID="SqlDataSource1" runat="server"></asp:SqlDataSource>
             <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:RuilwinkelDBConnectionString %>" SelectCommand="SELECT * FROM [Categories]"></asp:SqlDataSource>
             <asp:SqlDataSource ID="SqlDataSource3" runat="server" ConnectionString="<%$ ConnectionStrings:RuilwinkelDBConnectionString %>" SelectCommand="SELECT * FROM [Statusses]"></asp:SqlDataSource>

@@ -85,6 +85,11 @@ namespace b2d_4_4_intakeapp.Classes
             return currentCategory;
         }
 
+        internal void AddNewArticle(Product newProduct)
+        {
+            throw new NotImplementedException();
+        }
+
         // Het toevoegen van punten bij een user
         public void updateUser(User user)
         {
