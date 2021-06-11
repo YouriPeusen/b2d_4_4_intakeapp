@@ -33,13 +33,13 @@ namespace b2d_4_4_intakeapp
         protected global::System.Web.UI.WebControls.Image Image1;
 
         /// <summary>
-        /// articleImage0 control.
+        /// articleImage control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputFile articleImage0;
+        protected global::System.Web.UI.HtmlControls.HtmlInputFile articleImage;
 
         /// <summary>
         /// ImgPrv control.

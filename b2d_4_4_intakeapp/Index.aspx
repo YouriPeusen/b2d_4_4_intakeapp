@@ -113,7 +113,7 @@
             <table class="auto-style21">
                 <tr>
                     <td class="auto-style27">Add Image</td>
-                    <td class="auto-style26"> <input id="articleImage0" runat="server" type="file" class="auto-style15" onchange="ShowImagePreview(this);" /></td>
+                    <td class="auto-style26"> <input id="articleImage" runat="server" type="file" class="auto-style15" onchange="ShowImagePreview(this);" /></td>
                     <td>
                     <asp:Image ID="ImgPrv" Height="290px" Width="318px" runat="server" />
                                    </tr>
@@ -175,7 +175,7 @@
                 </tr>
                 <tr>
                     <td class="auto-style11"></td>
-                    <td class="auto-style14">Product description<td class="auto-style12"> <input r&nbsp;               </tr>
+                    <td class="auto-style14">Product description<td class="auto-style12"> <input r&nbsp;               </tr id="theProductDescription">
             </table>
         <div id="addNewProduct" class="auto-style18" draggable="true">
             <p class="auto-style20">
