@@ -5,15 +5,34 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title></title>
+    <title>Intake producten</title>
     <style type="text/css">
+        .auto-style1 {
+            height: 3px;
+        }
         .auto-style2 {
             width: 254px;
             font-family: Arial, Helvetica, sans-serif;
-            height: 26px;
         }
         .auto-style3 {
             width: 255px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .auto-style6 {
+            height: 3px;
+            width: 257px;
+        }
+        .auto-style7 {
+            width: 257px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .auto-style9 {
+            height: 3px;
+            width: 213px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .auto-style10 {
+            width: 213px;
             font-family: Arial, Helvetica, sans-serif;
         }
         .auto-style11 {
@@ -45,73 +64,9 @@
         .auto-style19 {
             height: 1080px;
             margin-left: 0px;
-            z-index: -1;
         }
         .auto-style20 {
             margin-left: 1360px;
-        }
-        .auto-style26 {
-            width: 221px;
-            height: 22px;
-        }
-        .auto-style27 {
-            width: 148px;
-            height: 22px;
-        }
-        .auto-style29 {
-            width: 38%;
-            position: relative;
-            left: 817px;
-            top: -602px;
-        }
-        .auto-style30 {
-            width: 148px;
-            height: 24px;
-        }
-        .auto-style31 {
-            font-family: Arial, Helvetica, sans-serif;
-            height: 24px;
-        }
-        .auto-style32 {
-            width: 221px;
-            height: 24px;
-        }
-        .auto-style33 {
-            width: 148px;
-            height: 19px;
-        }
-        .auto-style34 {
-            height: 19px;
-        }
-        .auto-style35 {
-            width: 221px;
-            height: 19px;
-        }
-        .auto-style36 {
-            height: 22px;
-        }
-        .auto-style37 {
-            font-family: Arial, Helvetica, sans-serif;
-            width: 169px;
-            height: 18px;
-            table-layout: auto;
-        }
-        .auto-style38 {
-            width: 255px;
-            font-family: Arial, Helvetica, sans-serif;
-            height: 25px;
-        }
-        .auto-style39 {
-            width: 254px;
-            font-family: Arial, Helvetica, sans-serif;
-        }
-        .auto-style40 {
-            width: 216px;
-            height: 25px;
-            font-family: Arial, Helvetica, sans-serif;
-        }
-        .auto-style41 {
-            height: 25px;
         }
     </style>
 </head>
@@ -121,23 +76,20 @@
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <br />
             <br /> <!-- ergens een optie geven om een compleet nieuw product toe te voegen -->
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <br />
             <br />
             <br />
             
-            <!-- providerId = ingelogde user of input
-                loandate & experationdate op null oid
-                
-              -->
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <asp:Image ID="Image1" runat="server" Height="273px" Width="293px" ImageUrl="~/Images/Ruiolwinkel Vaals Logo.png" ImageAlign="AbsMiddle" />
             <br />
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;<asp:Image ID="Image1" runat="server" Height="273px" Width="293px" ImageUrl="~/Images/Ruiolwinkel Vaals Logo.png" ImageAlign="Top" style="position: relative" />
-            <span class="auto-style15">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <asp:Image ID="Image2" runat="server" Height="281px" Width="336px" />
-            <br />
-            <br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             
+            <!-- het uitkiezen voor welke user het toegevoegd moet worden -->
+            User <asp:DropDownList ID="userChooser" runat="server" DataSourceID="SqlDataSource5" DataTextField="FirstName" DataValueField="UserID">
+            </asp:DropDownList>
+            <asp:SqlDataSource ID="SqlDataSource5" runat="server" ConnectionString="<%$ ConnectionStrings:RuilwinkelDBConnectionString %>" SelectCommand="SELECT * FROM [Users]"></asp:SqlDataSource>
 &nbsp;<table style="width:100%;" class="auto-style15">
                 <tr>
                     <td class="auto-style3">&nbsp;</td>
@@ -146,69 +98,67 @@
                     </td>
                 </tr>
                 <tr>
-                    <td class="auto-style38"></td>
-                    <td class="auto-style40">Product </td>
-                    <td class="auto-style41"> <asp:DropDownList ID="productChooser" runat="server" DataSourceID="SqlDataSource4" DataTextField="ProductName" DataValueField="ProductID" CssClass="auto-style15"></asp:DropDownList>
+                    <td class="auto-style3">&nbsp;</td>
+                    <td class="auto-style16">Product </td>
+                    <td> <asp:DropDownList ID="productChooser" runat="server" DataSourceID="SqlDataSource4" DataTextField="ProductName" DataValueField="ProductID" CssClass="auto-style15"></asp:DropDownList>
                     </td>
                 </tr>
                 <tr>
                     <td class="auto-style3">&nbsp;</td>
-                    <td class="auto-style16">Status <!-- misschien automatiseren --> </td>
-                    <td> <asp:DropDownList ID="statusChooser" runat="server" DataSourceID="SqlDataSource3" DataTextField="StatusName" DataValueField="StatusID" CssClass="auto-style15"></asp:DropDownList>
-                    </td>
+                    <td class="auto-style16">Description </td>
+                    <td> <input id="productDescription" type="text" class="auto-style15" /></td>
                 </tr>
             </table>
             <table class="auto-style17">
                 <tr>
-                    <td class="auto-style2"></td>
-                    <td class="auto-style14">Product name</td>
-                    <td class="auto-style12">
-                        <input runat="server" id="productName" type="text" class="auto-style15" /></td>
+                    <td class="auto-style2">&nbsp;</td>
+                    <td class="auto-style16">Status <!-- misschien automatiseren --></td>
+                    <td><asp:DropDownList ID="statusChooser" runat="server" DataSourceID="SqlDataSource3" DataTextField="StatusName" DataValueField="StatusID" CssClass="auto-style15"></asp:DropDownList>
+                    </td>
                 </tr>
                 <tr>
-                    <td class="auto-style39"></td>
-                    <td class="auto-style16" aria-relevant="all" aria-sort="none" draggable="false" style="vertical-align: top">Product description</td>
-                    <td> <input id="productDescription" type="text" class="auto-style37" style="vertical-align: text-top;" /></td>
+                    <td class="auto-style2">&nbsp;</td>
+                    <td class="auto-style16">Image </td>
+                    <td> <input id="articleImage" runat="server" type="file" class="auto-style15" /></td>
                 </tr>
                 <tr>
                     <td class="auto-style11"></td>
-                    <td class="auto-style14">&nbsp;</td>
-                    <td class="auto-style12"> &nbsp;</td>
+                    <td class="auto-style14">Commentary </td>
+                    <td class="auto-style12"> <input id="commentary" runat="server" type="text" class="auto-style15" /></td>
+                </tr>
+            </table>
+            <table class="auto-style17">
+                <tr>
+                    <td class="auto-style7">&nbsp;</td>
+                    <td class="auto-style10">Category </td>
+                    <td class="auto-style15">
+
+                        <asp:DropDownList ID="DropDownList1" runat="server" DataSourceID="SqlDataSource6" DataTextField="CategoryName" DataValueField="CategoryID">
+                        </asp:DropDownList>
+                        <asp:SqlDataSource ID="SqlDataSource6" runat="server" ConnectionString="<%$ ConnectionStrings:RuilwinkelDBConnectionString %>" SelectCommand="SELECT * FROM [Categories]"></asp:SqlDataSource>
+                      
+                       
+                        
+                    </td>
+                </tr>
+                <tr>
+                    <td class="auto-style7">&nbsp;</td>
+                    <td class="auto-style10">Product name</td>
+                    <td> <input runat="server" id="productName" type="text" class="auto-style15" /></td>
+                </tr>
+                <tr>
+                    <td class="auto-style6"></td>
+                    <td class="auto-style9">Product description</td>
+                    <td class="auto-style1"> <input runat="server" id="theProductDescription" type="text" class="auto-style15" /></td>
                 </tr>
             </table>
         <div id="addNewProduct" class="auto-style18" draggable="true">
             <p class="auto-style20">
             <br />
-
+                <asp:Button ID="btnAddArticle" runat="server" Text="Voeg artikel toe" OnClick="inputButton_Clicked" CssClass="auto-style15" />
             &nbsp;<asp:Button ID="btnAddProduct" runat="server" Text="Submit" OnClick="addProductBtn_Clicked" CssClass="auto-style15" />
              <br />
             &nbsp;</p>
-            <span class="auto-style15">
-            <table class="auto-style29">
-                <tr>
-                    <td class="auto-style30">
-            <span class="auto-style15">
-                        Kies een afbeelding</span></td>
-                    <td class="auto-style31">
-            <span class="auto-style15">
-                        <input id="articleImage" runat="server" type="file" class="auto-style15" /></span></td>
-                    <td class="auto-style32">&nbsp;</td>
-                </tr>
-                <tr>
-                    <td class="auto-style33">
-            <span class="auto-style15">
-                        Maak een foto</span></td>
-                    <td class="auto-style34">&nbsp;<asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Maak Foto" Width="89px" />
-                    </td>
-                    <td class="auto-style35"></td>
-                </tr>
-                <tr>
-                    <td class="auto-style27"></td>
-                    <td class="auto-style36"></td>
-                    <td class="auto-style26"></td>
-                </tr>
-            </table>
-            </span>
             <asp:SqlDataSource ID="SqlDataSource1" runat="server"></asp:SqlDataSource>
             <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:RuilwinkelDBConnectionString %>" SelectCommand="SELECT * FROM [Categories]"></asp:SqlDataSource>
             <asp:SqlDataSource ID="SqlDataSource3" runat="server" ConnectionString="<%$ ConnectionStrings:RuilwinkelDBConnectionString %>" SelectCommand="SELECT * FROM [Statusses]"></asp:SqlDataSource>
