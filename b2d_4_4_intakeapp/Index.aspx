@@ -190,7 +190,7 @@
                     <td class="auto-style28">&nbsp;</td>
                     <td class="auto-style30">Product name</td>
                     <td>
-                        <asp:TextBox ID="ProductName" runat="server"></asp:TextBox>
+                        <input id="productName" runat="server" type="text"></input>
                     </td>
                 </tr>
                 <tr>
@@ -204,7 +204,7 @@
                     <td class="auto-style28">&nbsp;</td>
                     <td class="auto-style30">Product Description</td>
                     <td>
-                        <asp:TextBox ID="ProductDescription" runat="server"></asp:TextBox>
+                        <input id="productDescriptionNA" runat="server" type="text"></input>
                     </td>
                 </tr>
             </table>
@@ -213,7 +213,7 @@
             <br />
                 <%--     &nbsp;<asp:Button ID="btnAddProduct" runat="server" Text="Submit" OnClick="addProductBtn_Clicked" CssClass="auto-style15" />--%>
              <br />
-            &nbsp;<asp:Button ID="addProductButton" runat="server" CssClass="auto-style15" OnClick="Button1_Click1" Text="Add Product" />
+            &nbsp;<asp:Button ID="btnAddProduct" runat="server" CssClass="auto-style15" OnClick="addProductBtn_Clicked" Text="Add Product" />
             </p>
             <asp:SqlDataSource ID="SqlDataSource1" runat="server"></asp:SqlDataSource>
             <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:RuilwinkelDBConnectionString %>" SelectCommand="SELECT * FROM [Categories]"></asp:SqlDataSource>
