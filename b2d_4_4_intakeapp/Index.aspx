@@ -21,7 +21,7 @@
     </script>
 </head>
 <body>
-    <title>Intake producten</title>
+    <title>Intake producten.</title>
     <style type="text/css">
         .auto-style2 {
             width: 254px;
