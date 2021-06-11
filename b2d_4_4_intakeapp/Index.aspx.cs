@@ -24,7 +24,7 @@ namespace b2d_4_4_intakeapp
             DateTime dateOne = DateTime.ParseExact("06/04/2021 10:00", "MM/dd/yyyy HH:mm", CultureInfo.InvariantCulture);
             DateTime dateTwo = DateTime.ParseExact("06/04/2021 10:00", "MM/dd/yyyy HH:mm", CultureInfo.InvariantCulture);
 
-            Article newArtcile = new Article(0, Convert.ToInt32(productChooser.SelectedValue), Convert.ToInt32(statusChooser.SelectedValue), Convert.ToInt32(userChooser.SelectedValue), 0, dateOne, dateTwo, articleImage.Value, commentary.Value); 
+            Article newArtcile = new Article(0, Convert.ToInt32(productChooser.SelectedValue), Convert.ToInt32(statusChooser.SelectedValue), Convert.ToInt32(userChooser.SelectedValue), 0, dateOne, dateTwo, articleImage0.Value, commentary.Value); 
             dal.AddNewArticle(newArtcile);
 
             // Het onderdeel dat bij het aanmaken van een nieuw artikel de punten bijschrijft bij de gebruiker. Via de ingevoerde categorie zoekt hij
@@ -42,14 +42,14 @@ namespace b2d_4_4_intakeapp
 
         }
 
-        protected void addProductBtn_Clicked(object sender, EventArgs e)
-        {
-            // maak object van class op basis van invoerveld, doe vervolgens code uit dal daarmee
+        //protected void addProductBtn_Clicked(object sender, EventArgs e)
+        //{
+        //    // maak object van class op basis van invoerveld, doe vervolgens code uit dal daarmee
 
-            Product newProduct = new Product(0, Convert.ToInt32(categoryChooser.SelectedValue), productName.Value, theProductDescription.Value);
-            dal.AddNewProduct(newProduct);
+        //    Product newProduct = new Product(0, Convert.ToInt32(categoryChooser.SelectedValue), productName.Value, productDescription.Value);
+        //    dal.AddNewProduct(newProduct);
 
-        }
+        //}
 
         protected void Button1_Click(object sender, EventArgs e)
         {

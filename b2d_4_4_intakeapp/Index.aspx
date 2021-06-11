@@ -175,13 +175,13 @@
                 </tr>
                 <tr>
                     <td class="auto-style11"></td>
-                    <td class="auto-style14">Product description<td class="auto-style12"> <input r&nbsp;               </tr>
+                   <%-- <td class="auto-style14">Product description<td class="auto-style12"> <input r&nbsp;             --%>  </tr>
             </table>
         <div id="addNewProduct" class="auto-style18" draggable="true">
             <p class="auto-style20">
             <br />
                 <asp:Button ID="btnAddArticle" runat="server" Text="Voeg artikel toe" OnClick="inputButton_Clicked" CssClass="auto-style15" />
-            &nbsp;<asp:Button ID="btnAddProduct" runat="server" Text="Submit" OnClick="addProductBtn_Clicked" CssClass="auto-style15" />
+       <%--     &nbsp;<asp:Button ID="btnAddProduct" runat="server" Text="Submit" OnClick="addProductBtn_Clicked" CssClass="auto-style15" />--%>
              <br />
             &nbsp;</p>
             <asp:SqlDataSource ID="SqlDataSource1" runat="server"></asp:SqlDataSource>
