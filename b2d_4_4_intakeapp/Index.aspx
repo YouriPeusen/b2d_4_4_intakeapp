@@ -68,10 +68,23 @@
         .auto-style20 {
             margin-left: 1360px;
         }
+        .auto-style21 {
+            width: 51%;
+            position: absolute;
+            left: -399px;
+            top: 134px;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-left: 1188px;
+        }
+        .auto-style22 {
+            width: 255px;
+            font-family: Arial, Helvetica, sans-serif;
+            height: 26px;
+        }
     </style>
 </head>
-<body>
-    <form id="inputNewItem" runat="server">
+<body>orm id="inputNewItem" runat="server">
+      
         <div class="auto-style19" style="background-image: url('Images/Background intake.png')">
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <br />
@@ -84,17 +97,40 @@
           
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <asp:Image ID="Image1" runat="server" Height="273px" Width="293px" ImageUrl="~/Images/Ruiolwinkel Vaals Logo.png" ImageAlign="AbsMiddle" />
             <br />
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <table class="auto-style21">
+                <tr>
+                    <td>Add Image</td>
+                    <td> <input id="articleImage0" runat="server" type="file" class="auto-style15" /></td>
+                    <td>
+                        <asp:Image ID="Image2" runat="server" Height="330px" Width="330px" />
+                                   </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+            </table>
+            <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             
             <!-- het uitkiezen voor welke user het toegevoegd moet worden -->
-            User <asp:DropDownList ID="userChooser" runat="server" DataSourceID="SqlDataSource5" DataTextField="FirstName" DataValueField="UserID">
+            <span class="auto-style15">User </span> <asp:DropDownList ID="userChooser" runat="server" DataSourceID="SqlDataSource5" DataTextField="FirstName" DataValueField="UserID" CssClass="auto-style15">
             </asp:DropDownList>
-            <asp:SqlDataSource ID="SqlDataSource5" runat="server" ConnectionString="<%$ ConnectionStrings:RuilwinkelDBConnectionString %>" SelectCommand="SELECT * FROM [Users]"></asp:SqlDataSource>
-&nbsp;<table style="width:100%;" class="auto-style15">
+&nbsp;<br />
+            <br />
+            <table style="width:100%;" class="auto-style15">
                 <tr>
-                    <td class="auto-style3">&nbsp;</td>
-                    <td class="auto-style16">Category</td>
-                    <td> <asp:DropDownList ID="categoryChooser" runat="server" DataSourceID="SqlDataSource2" DataTextField="CategoryName" DataValueField="CategoryID" CssClass="auto-style15"></asp:DropDownList>
+                    <td class="auto-style22"></td>
+                    <td class="auto-style14">Category</td>
+                    <td class="auto-style12"> <asp:DropDownList ID="categoryChooser" runat="server" DataSourceID="SqlDataSource2" DataTextField="CategoryName" DataValueField="CategoryID" CssClass="auto-style15"></asp:DropDownList>
                     </td>
                 </tr>
                 <tr>
@@ -118,38 +154,26 @@
                 </tr>
                 <tr>
                     <td class="auto-style2">&nbsp;</td>
-                    <td class="auto-style16">Image </td>
-                    <td> <input id="articleImage" runat="server" type="file" class="auto-style15" /></td>
+                    <td class="auto-style16">Commentary </td>
+                    <td> <input id="commentary" runat="server" type="text" class="auto-style15" /></td>
                 </tr>
                 <tr>
                     <td class="auto-style11"></td>
-                    <td class="auto-style14">Commentary </td>
-                    <td class="auto-style12"> <input id="commentary" runat="server" type="text" class="auto-style15" /></td>
-                </tr>
+                    <td class="auto-style14">Product &nbsp;                   <td class="auto-style12"> <input r&nbsp;               </tr>
             </table>
             <table class="auto-style17">
                 <tr>
                     <td class="auto-style7">&nbsp;</td>
-                    <td class="auto-style10">Category </td>
-                    <td class="auto-style15">
+                    <td class="auto-style10">Product Product name                   <td class="auto-style15">
 
-                        <asp:DropDownList ID="DropDownList1" runat="server" DataSourceID="SqlDataSource6" DataTextField="CategoryName" DataValueField="CategoryID">
-                        </asp:DropDownList>
-                        <asp:SqlDataSource ID="SqlDataSource6" runat="server" ConnectionString="<%$ ConnectionStrings:RuilwinkelDBConnectionString %>" SelectCommand="SELECT * FROM [Categories]"></asp:SqlDataSource>
-                      
-                       
-                        
-                    </td>
-                </tr>
+                        <input r<input runat="server" id="productName" type="text" class="auto-style15" />               </tr>
                 <tr>
                     <td class="auto-style7">&nbsp;</td>
-                    <td class="auto-style10">Product name</td>
-                    <td> <input runat="server" id="productName" type="text" class="auto-style15" /></td>
-                </tr>
+                    <td class="auto-style10">&nbsp;</Product description                   <td> &nbsp;</<input runat="server" id="theProductDescription" type="text" class="auto-style15" />               </tr>
                 <tr>
                     <td class="auto-style6"></td>
-                    <td class="auto-style9">Product description</td>
-                    <td class="auto-style1"> <input runat="server" id="theProductDescription" type="text" class="auto-style15" /></td>
+                    <td class="auto-style9">&nbsp;</td>
+                    <td class="auto-style1"> &nbsp;</td>
                 </tr>
             </table>
         <div id="addNewProduct" class="auto-style18" draggable="true">
@@ -163,12 +187,10 @@
             <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:RuilwinkelDBConnectionString %>" SelectCommand="SELECT * FROM [Categories]"></asp:SqlDataSource>
             <asp:SqlDataSource ID="SqlDataSource3" runat="server" ConnectionString="<%$ ConnectionStrings:RuilwinkelDBConnectionString %>" SelectCommand="SELECT * FROM [Statusses]"></asp:SqlDataSource>
             <asp:SqlDataSource ID="SqlDataSource4" runat="server" ConnectionString="<%$ ConnectionStrings:RuilwinkelDBConnectionString %>" SelectCommand="SELECT * FROM [Products]"></asp:SqlDataSource>
-            <br />
+            <asp:SqlDataSource ID="SqlDataSource5" runat="server" ConnectionString="<%$ ConnectionStrings:RuilwinkelDBConnectionString %>" SelectCommand="SELECT * FROM [Users]"></asp:SqlDataSource>
 
         </div>
         </div>
-
-        <!-- het toevoegen van een nieuw product, waarmee een nieuw artikel kan worden aangemaakt -->
     </form>
     </body>
 </html>
