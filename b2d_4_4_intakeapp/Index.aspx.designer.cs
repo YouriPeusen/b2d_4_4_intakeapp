@@ -33,13 +33,13 @@ namespace b2d_4_4_intakeapp
         protected global::System.Web.UI.WebControls.Image Image1;
 
         /// <summary>
-        /// articleImage control.
+        /// articleImage0 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputFile articleImage;
+        protected global::System.Web.UI.HtmlControls.HtmlInputFile articleImage0;
 
         /// <summary>
         /// ImgPrv control.
@@ -78,13 +78,13 @@ namespace b2d_4_4_intakeapp
         protected global::System.Web.UI.WebControls.DropDownList productChooser;
 
         /// <summary>
-        /// statusChooser control.
+        /// statusChooser0 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList statusChooser;
+        protected global::System.Web.UI.WebControls.DropDownList statusChooser0;
 
         /// <summary>
         /// commentary control.
@@ -96,13 +96,40 @@ namespace b2d_4_4_intakeapp
         protected global::System.Web.UI.HtmlControls.HtmlInputText commentary;
 
         /// <summary>
-        /// btnAddArticle control.
+        /// btnAddArticle0 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnAddArticle;
+        protected global::System.Web.UI.WebControls.Button btnAddArticle0;
+
+        /// <summary>
+        /// productProductName control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox productProductName;
+
+        /// <summary>
+        /// Productdicription control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox Productdicription;
+
+        /// <summary>
+        /// addProductButton control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button addProductButton;
 
         /// <summary>
         /// SqlDataSource1 control.
